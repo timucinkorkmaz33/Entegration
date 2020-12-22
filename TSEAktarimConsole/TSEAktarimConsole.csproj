@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A67E2750-DBDC-4964-854F-01E2EB39A64F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TSEAktarimConsole</RootNamespace>
+    <AssemblyName>TSEAktarimConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CharacterFixer.cs" />
+    <Compile Include="Config\ConfigValues.cs" />
+    <Compile Include="Config\EntegrationTimeFormat.cs" />
+    <Compile Include="Connected Services\TSEService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ModelVM\Izinler.cs" />
+    <Compile Include="ModelVM\SicilVM.cs" />
+    <Compile Include="ModelVM\Tbl_BirimlerVM.cs" />
+    <Compile Include="ModelVM\UserListVM.cs" />
+    <Compile Include="Model\Izinler.cs">
+      <DependentUpon>PDKS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PDKS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PDKS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PDKS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PDKS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PDKS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PDKS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sicil.cs">
+      <DependentUpon>PDKS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Tbl_Birimler.cs">
+      <DependentUpon>PDKS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserList.cs">
+      <DependentUpon>PDKS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Model\PDKS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PDKS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Connected Services\TSEService\BasvuruBolumDataSet.xsd" />
+    <None Include="Connected Services\TSEService\BasvuruEkTurleriDataSet.xsd" />
+    <None Include="Connected Services\TSEService\BirimDataSet.xsd" />
+    <None Include="Connected Services\TSEService\ikbs.wsdl" />
+    <None Include="Connected Services\TSEService\KadroUnvanDataSet.xsd" />
+    <None Include="Connected Services\TSEService\KpssPuanTurleriDataSet.xsd" />
+    <None Include="Connected Services\TSEService\ParametreDataSet.xsd" />
+    <None Include="Connected Services\TSEService\PersonelDataSet.xsd" />
+    <None Include="Connected Services\TSEService\PersonelEgitimIzinDataSet.xsd" />
+    <None Include="Connected Services\TSEService\PersonelIzinAraTabloDataSet.xsd" />
+    <None Include="Connected Services\TSEService\PersonelIzinDataSet.xsd" />
+    <None Include="Connected Services\TSEService\PersonelIzinTuruDataSet.xsd" />
+    <None Include="Connected Services\TSEService\PersonelResimDataSet.xsd" />
+    <None Include="Connected Services\TSEService\PersonelVekaletDataSet.xsd" />
+    <None Include="Connected Services\TSEService\ResmiTatilDataSet.xsd" />
+    <None Include="Connected Services\TSEService\SigortaPrimEsasUcretDigerDataSet.xsd" />
+    <None Include="Connected Services\TSEService\SSKIsyeriIDDataSet.xsd" />
+    <None Include="Connected Services\TSEService\TetkikciKategoriDataSet.xsd" />
+    <None Include="Connected Services\TSEService\TetkikciNaceDataSet.xsd" />
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.BasvuruBolumDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.BasvuruEkTurleriDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.BirimDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.KadroUnvanDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.KpssPuanTurleriDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.ParametreDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelEgitimIzinDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelIzin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelIzinAraTabloDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelIzinDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelIzinTuruDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelResimDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.PersonelVekaletDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.ResmiTatilDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.SigortaPrimEsasUcretDigerDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.SSKIsyeriIDDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.TetkikciKategoriDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.TetkikciNaceDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\TSEAktarimConsole.TSEService.UlkeDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\TSEService\UlkeDataSet.xsd" />
+    <None Include="Model\PDKS.edmx.diagram">
+      <DependentUpon>PDKS.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\TSEService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\TSEService\configuration.svcinfo" />
+    <None Include="Connected Services\TSEService\configuration91.svcinfo" />
+    <None Include="Connected Services\TSEService\ikbs.disco" />
+    <Content Include="Model\PDKS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PDKS.edmx</DependentUpon>
+      <LastGenOutput>PDKS.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\PDKS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PDKS.edmx</DependentUpon>
+      <LastGenOutput>PDKS.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\TSEService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
