@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b24a7d640f8a40e1b4de58a9b76b7d43" Name="Diagram1" ZoomLevel="36">
+        <EntityTypeShape EntityType="TSEModel.Sicil" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSEModel.UserList" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="TSEModel.FK_Sicil_UserList" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TSEModel.Tbl_Birimler" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="TSEModel.Izinler" Width="1.5" PointX="5.25" PointY="6.25" />
+        <AssociationConnector Association="TSEModel.FK_Izinler_Sicil" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

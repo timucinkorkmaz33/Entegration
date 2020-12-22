@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/BasvuruBolumDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/BasvuruBolumDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/BasvuruBolumDataSet.xsd" id="BasvuruBolumDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="BasvuruBolumDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BasvuruBolum">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="BasvuruBolumUN" type="xs:string" />
+              <xs:element minOccurs="0" name="BolumAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="BasvuruGrupUN" type="xs:string" />
+              <xs:element minOccurs="0" name="Silindi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ReferansKodu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AlimTuru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="PuanTuru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Kontenjan" type="xs:int" />
+              <xs:element minOccurs="0" name="IlId" type="xs:int" />
+              <xs:element minOccurs="0" name="KpssSinavYili">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="YdsSinavYili">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="ZFotograf" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZIletisim" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZEgitim" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZIsTecrube" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZReferans" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZIngilizceDil" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZFransizcaDil" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZKlasikOzgecmis" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZDiploma" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZEgtIlkOgretim" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZEgitimLise" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZEgtYuksekokul" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZEgtLisans" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZEgtYuksekLisans" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ZEgtDoktora" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EkTurleri">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AzamiYasSiniri" type="xs:dateTime" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="KadroUnvan" type="xs:string" />
+              <xs:element minOccurs="0" name="KpssPuanSiniri" type="xs:int" />
+              <xs:element minOccurs="0" name="YdsPuanSiniri" type="xs:int" />
+              <xs:element minOccurs="0" name="Engelli" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Hukumlu" type="xs:boolean" />
+              <xs:element minOccurs="0" name="YdsDilTuru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="OnemliHususlar">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="BasvuruBolum0">
+      <xs:selector xpath=".//mstns:BasvuruBolum" />
+      <xs:field xpath="mstns:BasvuruBolumUN" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

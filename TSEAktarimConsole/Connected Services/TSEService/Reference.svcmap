@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f67e2093-5245-497b-80d9-22f0f6428892" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BasvuruEkTurleriDataSet.xsd" MetadataType="Schema" ID="f8ab1878-cf85-4537-9ba1-cd8d2752ddd6" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=BasvuruEkTurleriDataSet" />
+    <MetadataFile FileName="ikbs.wsdl" MetadataType="Wsdl" ID="a2df721e-a96d-4256-b3c3-24fc1d7188a9" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?wsdl" />
+    <MetadataFile FileName="SSKIsyeriIDDataSet.xsd" MetadataType="Schema" ID="10f7673e-80da-41ef-87d2-437ebb07162e" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=SSKIsyeriIDDataSet" />
+    <MetadataFile FileName="BasvuruBolumDataSet.xsd" MetadataType="Schema" ID="cfafe752-c76e-4cc5-b62e-8a66e14ada83" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=BasvuruBolumDataSet" />
+    <MetadataFile FileName="ikbs.disco" MetadataType="Disco" ID="97570f43-206f-420f-89c2-79259ddb5848" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?disco" />
+    <MetadataFile FileName="TetkikciKategoriDataSet.xsd" MetadataType="Schema" ID="f952ae8e-ecbf-477c-afb4-f9a299da9933" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=TetkikciKategoriDataSet" />
+    <MetadataFile FileName="PersonelIzinTuruDataSet.xsd" MetadataType="Schema" ID="d6ff47cd-1ce2-4b5f-b7a5-4f9e1dec603a" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelIzinTuruDataSet" />
+    <MetadataFile FileName="ResmiTatilDataSet.xsd" MetadataType="Schema" ID="9a37e4f0-6fb1-412d-8bf1-4ca10b9aa627" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=ResmiTatilDataSet" />
+    <MetadataFile FileName="PersonelIzinDataSet.xsd" MetadataType="Schema" ID="6ae44319-799e-4ac6-bd38-6125aaa41dc3" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelIzinDataSet" />
+    <MetadataFile FileName="PersonelEgitimIzinDataSet.xsd" MetadataType="Schema" ID="773ebefc-e928-4473-8e56-f132844103e1" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelEgitimIzinDataSet" />
+    <MetadataFile FileName="ParametreDataSet.xsd" MetadataType="Schema" ID="83c82531-869a-4771-9df2-cfdec6ba4844" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=ParametreDataSet" />
+    <MetadataFile FileName="BirimDataSet.xsd" MetadataType="Schema" ID="c1189484-b672-4537-a2f8-5491775c6a6d" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=BirimDataSet" />
+    <MetadataFile FileName="TetkikciNaceDataSet.xsd" MetadataType="Schema" ID="9cac76c1-8cc9-4931-8291-1d4dbc4c2c76" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=TetkikciNaceDataSet" />
+    <MetadataFile FileName="PersonelDataSet.xsd" MetadataType="Schema" ID="7388b8af-21f0-4e49-8625-a5d42a1c7e28" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelDataSet" />
+    <MetadataFile FileName="KadroUnvanDataSet.xsd" MetadataType="Schema" ID="768d7a74-a54b-428f-b384-e633a8073461" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=KadroUnvanDataSet" />
+    <MetadataFile FileName="KpssPuanTurleriDataSet.xsd" MetadataType="Schema" ID="578a3735-7b80-4845-926e-0adc3574342b" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=KpssPuanTurleriDataSet" />
+    <MetadataFile FileName="PersonelIzinAraTabloDataSet.xsd" MetadataType="Schema" ID="1ad0e31f-8b5f-452e-8960-5305f61575ab" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelIzinAraTabloDataSet" />
+    <MetadataFile FileName="UlkeDataSet.xsd" MetadataType="Schema" ID="122eb7cd-ad86-46e5-a805-1602da626377" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=UlkeDataSet" />
+    <MetadataFile FileName="PersonelResimDataSet.xsd" MetadataType="Schema" ID="5ba923ca-73c1-411a-b336-ce241b05f62e" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelResimDataSet" />
+    <MetadataFile FileName="SigortaPrimEsasUcretDigerDataSet.xsd" MetadataType="Schema" ID="5fd3e497-a0e9-40a3-bcd1-bb3c3ea44dc0" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=SigortaPrimEsasUcretDigerDataSet" />
+    <MetadataFile FileName="PersonelVekaletDataSet.xsd" MetadataType="Schema" ID="7c67b0a9-4524-4595-ab44-a09e791ae7ee" SourceId="1" SourceUrl="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelVekaletDataSet" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

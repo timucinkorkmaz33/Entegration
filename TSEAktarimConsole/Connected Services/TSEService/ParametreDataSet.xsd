@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/ParametreDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/ParametreDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ParametreDataSet.xsd" id="ParametreDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="ParametreDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Parametre">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ParametreUN" type="xs:string" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="BordroDonemUN" type="xs:string" />
+              <xs:element minOccurs="0" name="EsKatsayi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="CocukKucukKatsayi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="CocukBuyukKatsayi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AgiEsOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AgiIlkIkiCocukOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AgiSonrakiCocukOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AgiPersonelOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AgiSabitCarpan" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AsgariUcret" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MesaiKatsayi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="UlasimKatsayi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TavanMaas" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YemekUcret" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DestekPrim" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SigortaMuafMiktar" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DamgaVergisi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YanOdemeOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="HastalikPrim" type="xs:decimal" />
+              <xs:element minOccurs="0" name="IhtiyarlikPrim" type="xs:decimal" />
+              <xs:element minOccurs="0" name="OnDereceBirKademe" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BaskanGosterge" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BaskanGorevTazOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BaskanSskKesilecek" type="xs:boolean" />
+              <xs:element minOccurs="0" name="BaskanSskIsveren" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BaskanSskIsci" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YonetimKuruluUcret" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniKaysayi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniTabanMaas" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniKaysayiFark" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniTabanMaasFark" type="xs:decimal" />
+              <xs:element name="FarkAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Silindi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="UlkeCarpanEsOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="UlkeCarpanCocukOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EnYuksekDevletMemuruNetMaas" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DenetlemeKurulNetMaas" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AsgariUcretAgi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SakatlikDerece1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SakatlikDerece2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SakatlikDerece3" type="xs:decimal" />
+              <xs:element minOccurs="0" name="IncelemeUzmaniBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SozlesmeliDoktorNet" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniDaireBaskaniBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniMuhendisBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniTeknikerBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniTeknisyenBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniMemurBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YPK" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniMütercimBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniHukukMusaviriBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniMusavirBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniTeknikerEskiBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniMuhendisEskiBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YeniAvukatBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="UzYarBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EtiMadenMuhBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EtiMadenTeknikerBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YanOdemeKatsayisi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EnYuksekEkGosterge657" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EmekliKesenegiKurumOran_657" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EmekliKesenegiKisiOran_657" type="xs:decimal" />
+              <xs:element minOccurs="0" name="GemiciBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="LPGciBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="IncTamZamanli" type="xs:decimal" />
+              <xs:element minOccurs="0" name="IsGelistirmeKuruluGost" type="xs:decimal" />
+              <xs:element minOccurs="0" name="RadyoaktiviteGunlukBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PancarciLisans" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PancarciOnLisans" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PancarciTeknisyen" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KasaGosterge" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MutemetGosterge" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TahMemuruGosterge" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AmbarMemuruGosterge" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BoytasNetUcret" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme3" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme4" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme5" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme6" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme7" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme8" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme9" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Sozlesme10" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SizmaTestUzm1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AgiUcuncuCocukOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SizmaTestUzm2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SizmaTestUzm3" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SizmaTestUzm4" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SizmaTestUzm5" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AdrProje1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AdrProje2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AdrProje3" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AdrProje4" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AdrProje5" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SskIsverenOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SskIsciOran" type="xs:double" />
+              <xs:element minOccurs="0" name="SskIsverenIssizlikOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SskIsciIssizlikOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="GssIsverenOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="GssIsciOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SozlesmeliDoktorBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BESOran" type="xs:double" />
+              <xs:element minOccurs="0" name="BESAltSinir" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BESMaktuTutar" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KefaletGiris" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KefaletAidat" type="xs:decimal" />
+              <xs:element minOccurs="0" name="StajerNetAsgariUcret" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIYemekTutar" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KICocukYardim" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIYakacakYardim" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIOgrenimYardimIlk" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIOgrenimYardimOrta" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIOgrenimYardimLise" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIOgrenimYardimUni" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIDireksiyonPrimi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIBayramYardimi" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Parametre0">
+      <xs:selector xpath=".//mstns:Parametre" />
+      <xs:field xpath="mstns:ParametreUN" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

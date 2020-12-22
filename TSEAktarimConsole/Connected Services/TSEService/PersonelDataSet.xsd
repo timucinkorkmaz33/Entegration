@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/PersonelDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/PersonelDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/PersonelDataSet.xsd" id="PersonelDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PersonelDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Personel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="PersonelUN" type="xs:string" />
+              <xs:element name="TCKimlikNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Soyad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="KadroTipId" type="xs:int" />
+              <xs:element name="SicilNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SigortaNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsyeriSigortaNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="FotografURL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Cinsiyet" type="xs:int" />
+              <xs:element name="BabaAd">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AnaAd">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KizlikSoyad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DogumYeri">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="DogumTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MedeniHalId" type="xs:int" />
+              <xs:element minOccurs="0" name="KanGrupId" type="xs:int" />
+              <xs:element minOccurs="0" name="AskerlikDurumId" type="xs:int" />
+              <xs:element minOccurs="0" name="AskerlikBasTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="AskerlikBitTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="AskerlikTecilTar" type="xs:dateTime" />
+              <xs:element name="AskerlikMuafSebebi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NufusCuzSeriNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NufusCuzVerYer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="NufusCuzVerTar" type="xs:dateTime" />
+              <xs:element name="NufusCuzVerNedeni">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="NufusCuzIl" type="xs:int" />
+              <xs:element name="NufusCuzIlce">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NufusCuzMahKoy">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NufusCuzCilt">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NufusCuzAileSira">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NufusCuzSira">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NufusCuzKayitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SemtIlce">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="IlID" type="xs:int" />
+              <xs:element name="Telefon">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GSM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="BirimUN" type="xs:string" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="GorevYeriUN" type="xs:string" />
+              <xs:element minOccurs="0" name="HizmetSinifId" type="xs:int" />
+              <xs:element minOccurs="0" name="Derece" type="xs:int" />
+              <xs:element minOccurs="0" name="Kademe" type="xs:int" />
+              <xs:element minOccurs="0" name="MaasDerece" type="xs:int" />
+              <xs:element minOccurs="0" name="MaasKademe" type="xs:int" />
+              <xs:element minOccurs="0" name="YeniMaasDerece" type="xs:int" />
+              <xs:element minOccurs="0" name="YeniMaasKademe" type="xs:int" />
+              <xs:element minOccurs="0" name="Derece657" type="xs:int" />
+              <xs:element minOccurs="0" name="Kademe657" type="xs:int" />
+              <xs:element minOccurs="0" name="HesaplamaKatsayi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="HesaplamaKatsayiFark" type="xs:decimal" />
+              <xs:element minOccurs="0" name="HesaplamaTabanMaas" type="xs:decimal" />
+              <xs:element minOccurs="0" name="HesaplamaTabanMaas662" type="xs:decimal" />
+              <xs:element minOccurs="0" name="HesaplamaTabanMaasFark" type="xs:decimal" />
+              <xs:element minOccurs="0" name="HesaplamaKatsayi662" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PartTimeMi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EnstBasTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="KadroGecisTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="TerfiTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="AyrilmaTar" type="xs:dateTime" />
+              <xs:element name="AyrilmaAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="TetkikBelge" type="xs:boolean" />
+              <xs:element minOccurs="0" name="KalanYillikIzin" type="xs:int" />
+              <xs:element minOccurs="0" name="KalanGunlukIzin" type="xs:int" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="KadroUnvanUn" type="xs:string" />
+              <xs:element minOccurs="0" name="KadroUnvanDurumId" type="xs:int" />
+              <xs:element minOccurs="0" name="EPostaUnvan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PasaportNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="TebligSuresi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="TemditSuresi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="PasaportPersonel" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EkGosterge" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EkGostergeYeni" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EkGosterge662" type="xs:decimal" />
+              <xs:element name="AyrılmaSebebi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="MasterIc" type="xs:int" />
+              <xs:element minOccurs="0" name="SakatlikId" type="xs:int" />
+              <xs:element name="SakatlikAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AsaletTescilTar" type="xs:dateTime" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="BankaUN" type="xs:string" />
+              <xs:element name="HesapNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IBAN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UlasimYardimi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ToplamVergiMatrah" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MaasAliyor" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IkramiyeAliyor" type="xs:boolean" />
+              <xs:element minOccurs="0" name="TeknikKurulTurId" type="xs:int" />
+              <xs:element minOccurs="0" name="TazminatTurId" type="xs:int" />
+              <xs:element name="HazirlikGrup" type="xs:boolean" />
+              <xs:element name="YonetimKurulu" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EskiHukumlu" type="xs:boolean" />
+              <xs:element name="HukumluAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="DahiliTelNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="SporKulubuKesintisi" type="xs:decimal" />
+              <xs:element minOccurs="0" name="OzelSaglikSig" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BireyselEmeklilik" type="xs:decimal" />
+              <xs:element minOccurs="0" name="OzelHayat" type="xs:decimal" />
+              <xs:element name="Silindi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EmsalGosterge" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YurtdisiUlkeGrubu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="YurtdisiUlkeGrubuCarpan" type="xs:decimal" />
+              <xs:element minOccurs="0" name="YurtdisiParaBirimiID" type="xs:int" />
+              <xs:element minOccurs="0" name="YurtdisiPersonel" type="xs:boolean" />
+              <xs:element name="YurtdisiAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="YurtdisiUlkeUN" type="xs:string" />
+              <xs:element name="DenetlemeKurulu" type="xs:boolean" />
+              <xs:element minOccurs="0" name="AktarildiMi" type="xs:boolean" />
+              <xs:element name="UcretsizIzin" type="xs:boolean" />
+              <xs:element name="UlasimYardimiAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Gosterge662" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EmanetKistOran" type="xs:decimal" />
+              <xs:element minOccurs="0" name="IsTelefon">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="SozlesmeliDoktor" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IncelemeUzmani" type="xs:boolean" />
+              <xs:element minOccurs="0" name="YeniPersonel" type="xs:boolean" />
+              <xs:element minOccurs="0" name="SozlesmeBasTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="SozlesmeBitTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="KamuGorevlisi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Aciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="BransUN" type="xs:string" />
+              <xs:element minOccurs="0" name="ElektronikImzasiVarMi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="BasvuruTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="SonGecerlilikTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="TeslimTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="IECalismaTuru" type="xs:int" />
+              <xs:element minOccurs="0" name="SozlesmeBrut" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MahalliTemsilci" type="xs:boolean" />
+              <xs:element minOccurs="0" name="SabitGelirToplam" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SabitAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="EngelliMi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="AgiAlacak" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsAdres">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UcretTuru" type="xs:int" />
+              <xs:element minOccurs="0" name="BESBaslamaTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="BESBaslamaAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="BESCikisTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="BESCikisAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="BESIstekKesinti" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BESIstekKesintiAciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="YariZamanli" type="xs:boolean" />
+              <xs:element minOccurs="0" name="KefaletCuzdanNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="KefaletUyelikTuru" type="xs:int" />
+              <xs:element minOccurs="0" name="KefaletGirisTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="KefaletCikisTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="KIYemekGun" type="xs:decimal" />
+              <xs:element minOccurs="0" name="KIUlasimGun" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Personel0">
+      <xs:selector xpath=".//mstns:Personel" />
+      <xs:field xpath="mstns:PersonelUN" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

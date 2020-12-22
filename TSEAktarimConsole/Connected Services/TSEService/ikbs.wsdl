@@ -1,0 +1,4027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:import namespace="http://tempuri.org/PersonelVekaletDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/TetkikciKategoriDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/TetkikciNaceDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/BasvuruBolumDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/KpssPuanTurleriDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/BasvuruEkTurleriDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/BirimDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/SSKIsyeriIDDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/ParametreDataSet.xsd" />
+      <s:import />
+      <s:import namespace="http://tempuri.org/UlkeDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/PersonelIzinTuruDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/KadroUnvanDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/PersonelDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/PersonelIzinDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/PersonelIzinAraTabloDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/PersonelResimDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/PersonelEgitimIzinDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/ResmiTatilDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=KadroUnvanDataSet" namespace="http://tempuri.org/KadroUnvanDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=ResmiTatilDataSet" namespace="http://tempuri.org/ResmiTatilDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelIzinTuruDataSet" namespace="http://tempuri.org/PersonelIzinTuruDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=SigortaPrimEsasUcretDigerDataSet" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelIzinAraTabloDataSet" namespace="http://tempuri.org/PersonelIzinAraTabloDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelResimDataSet" namespace="http://tempuri.org/PersonelResimDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=ParametreDataSet" namespace="http://tempuri.org/ParametreDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=KpssPuanTurleriDataSet" namespace="http://tempuri.org/KpssPuanTurleriDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelDataSet" namespace="http://tempuri.org/PersonelDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=BasvuruEkTurleriDataSet" namespace="http://tempuri.org/BasvuruEkTurleriDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=BirimDataSet" namespace="http://tempuri.org/BirimDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelVekaletDataSet" namespace="http://tempuri.org/PersonelVekaletDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelIzinDataSet" namespace="http://tempuri.org/PersonelIzinDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=UlkeDataSet" namespace="http://tempuri.org/UlkeDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=SSKIsyeriIDDataSet" namespace="http://tempuri.org/SSKIsyeriIDDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=BasvuruBolumDataSet" namespace="http://tempuri.org/BasvuruBolumDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=PersonelEgitimIzinDataSet" namespace="http://tempuri.org/PersonelEgitimIzinDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=TetkikciNaceDataSet" namespace="http://tempuri.org/TetkikciNaceDataSet.xsd" />
+      <s:import schemaLocation="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx?schema=TetkikciKategoriDataSet" namespace="http://tempuri.org/TetkikciKategoriDataSet.xsd" />
+      <s:element name="BirimListesi">
+        <s:complexType />
+      </s:element>
+      <s:element name="BirimListesiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimListesiResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelListesi">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelListesiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelListesiResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelListesiPDKS">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelListesiPDKSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelListesiPDKSResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinListesiPDKS">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelIzinListesiPDKSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelIzinListesiPDKSResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinGorulduYapPDKS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinGorulduYapPDKSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelIzinGorulduYapPDKSResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinEntegrasyon">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelIzinEntegrasyonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelIzinEntegrasyonResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinKontrol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dt" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinKontrolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelIzinKontrolResult" type="tns:ArrayOfPersonelIzin" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPersonelIzin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PersonelIzin" nillable="true" type="tns:PersonelIzin" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PersonelIzin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Soyadi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SicilNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TCKimlikNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IzinBasTarihi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IzinBitTarihi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IzinTuru" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Aciklama" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IzinID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Silindi" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="IzinliMi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dt" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="KullaniciAdi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IzinliMiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IzinliMiResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimBilgisiGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BirimUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimBilgisiGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimBilgisiGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimdekiPersonelBilgisiGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BirimUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimdekiPersonelBilgisiGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimdekiPersonelBilgisiGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimBilgisiGetirAdindan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimAdi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimBilgisiGetirAdindanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimBilgisiGetirAdindanResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimGrupBaskaniGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BirimUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimGrupBaskaniGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimGrupBaskaniGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelSorumlulukGetirTCden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCKimlikNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelSorumlulukGetirTCdenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelSorumlulukGetirTCdenResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelSorumlulukGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersorUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelSorumlulukGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelSorumlulukGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MudurlukAltindakiIzinliSayisi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MudurlukAltindakiIzinliSayisiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MudurlukAltindakiIzinliSayisiResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MudurlukAltindakiIzinliSayisiSorumluluktan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BirimUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MudurlukAltindakiIzinliSayisiSorumluluktanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MudurlukAltindakiIzinliSayisiSorumluluktanResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AmirleriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AmirleriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AmirleriGetirResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AmirleriGetirSorumluluktan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PerSorUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AmirleriGetirSorumluluktanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AmirleriGetirSorumluluktanResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FirmaPersonelAmirleriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FirmaPersonelAmirleriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FirmaPersonelAmirleriGetirResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MudurlukAltindakiBirimler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MudurlukAltindakiBirimlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MudurlukAltindakiBirimlerResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelKadroListesi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelKadroListesiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelKadroListesiResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinVekaletGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinVekaletGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelIzinVekaletGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelKadroListesiSorumluluktan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PerSorUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelKadroListesiSorumluluktanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelKadroListesiSorumluluktanResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileri">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgileriResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEnstIciHizmetGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEnstIciHizmetGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelEnstIciHizmetGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriFPDahil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriFPDahilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgileriFPDahilResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriEPostadan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eposta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriEPostadanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgileriEPostadanResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgiGetirTcden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCKimlikNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgiGetirTcdenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgiGetirTcdenResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgiGetirTcAdSoyad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCKimlikNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Soyad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IsYeriSicilNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgiGetirTcAdSoyadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgiGetirTcAdSoyadResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsyeriCalisanSayisiGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsYeriSicilNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsyeriCalisanSayisiGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsyeriCalisanSayisiGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgiGetirPersonelUnden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgiGetirPersonelUndenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgiGetirPersonelUndenResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriSorumluluktan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PerSorUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriSorumluluktanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgileriSorumluluktanResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriAyrilanlarDahil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgileriAyrilanlarDahilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgileriAyrilanlarDahilResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBilgiGetirByBirimUN">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelBilgiGetirByBirimUNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBilgiGetirByBirimUNResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KullaniciUnvanGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KullaniciUnvanGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KullaniciUnvanGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEgitimGetirByKullaniciUN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEgitimGetirByKullaniciUNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelEgitimGetirByKullaniciUNResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEgitimDosyaYoluKaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="personelEgitimUn" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="dosyaYolu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEgitimDosyaYoluKaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelEgitimDosyaYoluKaydetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimListesiAsJson">
+        <s:complexType />
+      </s:element>
+      <s:element name="BirimListesiAsJsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimListesiAsJsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelVekaletGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VekaletVerenKullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelVekaletGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelVekaletGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelVekaletDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciKategoriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Turu" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="standard" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="atamatar" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="durum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tetkikciun" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciKategoriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TetkikciKategoriGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/TetkikciKategoriDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciNaceGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eakodu" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="standard" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nacekodu" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="naceversiyonu" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tetkikciun" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciNaceGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TetkikciNaceGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/TetkikciNaceDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelVekaletGetirSorumluluktan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VekaletVerenPerSorUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelVekaletGetirSorumluluktanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelVekaletGetirSorumluluktanResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelVekaletDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinOnayNoAl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Icerikid" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="OnayNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="OnayTarihi" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinOnayNoAlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelIzinOnayNoAlResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelGorevIzinGir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelGorevIzinGirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelGorevIzinGirResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinHavaleEdildi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IcerikId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinHavaleEdildiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelIzinHavaleEdildiResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciKategoriGir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="guncellememi" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciKategoriGirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TetkikciKategoriGirResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciNaceGir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="guncellememi" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TetkikciNaceGirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TetkikciNaceGirResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YetkiNetKullaniciGir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tckimlikno" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YetkiNetKullaniciGirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="YetkiNetKullaniciGirResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VekaletKullaniciUNGetirByPersonelUN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VekaletKullaniciUNGetirByPersonelUNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VekaletKullaniciUNGetirByPersonelUNResult" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelBimser">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelBimserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelBimserResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BasvuruBolumGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BolumUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BasvuruBolumGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BasvuruBolumGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/BasvuruBolumDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PuanTuruGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="PuanTuruGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PuanTuruGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/KpssPuanTurleriDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BasvuruEkTuruGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="BasvuruEkTuruGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BasvuruEkTuruGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/BasvuruEkTurleriDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimGetirBySskID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSKId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimGetirBySskIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimGetirBySskIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/BirimDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsyeriGetirBySskID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSKId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsyeriGetirBySskIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsyeriGetirBySskIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/SSKIsyeriIDDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ParametreGetirYilAy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Yil" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Ay" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ParametreGetirYilAyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParametreGetirYilAyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/ParametreDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SslXmlVeriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSKID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Yil" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Ay" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SslXmlVeriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SslXmlVeriGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SigortaPrimEsasUcretDigerGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="Yil" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Ay" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SigortaPrimEsasUcretDigerGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SigortaPrimEsasUcretDigerGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UlkeGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="UlkeGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UlkeGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/UlkeDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinTuruGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelIzinTuruGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelIzinTuruGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinTuruDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BirimGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="BirimGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BirimGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/BirimDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KadroUnvanGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="KadroUnvanGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KadroUnvanGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/KadroUnvanDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelGetirByPersonelUN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelGetirByPersonelUNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelGetirByPersonelUNResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelOnayliIzinleriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelOnayliIzinleriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelOnayliIzinleriGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelOnaysizIzinleriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelOnaysizIzinleriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelOnaysizIzinleriGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinAraTabloDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelResimGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelResimGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelResimGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelResimDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelAmirleriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="BirimUNmi" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelAmirleriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelAmirleriGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YetkiNetUNGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YetkiNetUNGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="YetkiNetUNGetirResult" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelUnGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KullaniciUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelUnGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUnGetirResult" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelAmirGetirFPden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelAmirGetirFPdenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelAmirGetirFPdenResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelAraTabloIzinGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelAraTabloIzinGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelAraTabloIzinGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinAraTabloDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelGercekTabloIzinGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="PersonelGercekTabloIzinGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelGercekTabloIzinGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinKaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="AktifKullaniciAdi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinKaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelIzinKaydetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelKaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="AktifKullaniciAdi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelKaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelKaydetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinAraTabloKaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinAraTabloDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="AktifKullaniciAdi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelIzinAraTabloKaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelIzinAraTabloKaydetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEgitimIzinGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PersonelUN" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="SonTarih" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="OlurTar" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sayi" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TarihKontrol" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonelEgitimIzinGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonelEgitimIzinGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelEgitimIzinDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResmiTatilGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="ResmiTatilGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResmiTatilGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/ResmiTatilDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EReceteRaporGir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsRapor">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/PersonelIzinDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EReceteRaporGirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EReceteRaporGirResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsYeriGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="isYeriAdi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ilPlakaNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tehlikeSinifID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sicilNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsYeriGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsYeriGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/SSKIsyeriIDDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HesaplamaUNGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TcKimlikNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hesaplamaturId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="yil" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ay" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HesaplamaUNGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HesaplamaUNGetirResult">
+              <s:complexType>
+                <s:annotation>
+                  <s:appinfo>
+                    <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                  </s:appinfo>
+                </s:annotation>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BirimListesiSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimListesi" />
+  </wsdl:message>
+  <wsdl:message name="BirimListesiSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimListesiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelListesiSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelListesi" />
+  </wsdl:message>
+  <wsdl:message name="PersonelListesiSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelListesiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelListesiPDKSSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelListesiPDKS" />
+  </wsdl:message>
+  <wsdl:message name="PersonelListesiPDKSSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelListesiPDKSResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinListesiPDKSSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinListesiPDKS" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinListesiPDKSSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinListesiPDKSResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinGorulduYapPDKSSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinGorulduYapPDKS" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinGorulduYapPDKSSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinGorulduYapPDKSResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinEntegrasyonSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinEntegrasyon" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinEntegrasyonSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinEntegrasyonResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinKontrolSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinKontrol" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinKontrolSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinKontrolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IzinliMiSoapIn">
+    <wsdl:part name="parameters" element="tns:IzinliMi" />
+  </wsdl:message>
+  <wsdl:message name="IzinliMiSoapOut">
+    <wsdl:part name="parameters" element="tns:IzinliMiResponse" />
+  </wsdl:message>
+  <wsdl:message name="BirimBilgisiGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimBilgisiGetir" />
+  </wsdl:message>
+  <wsdl:message name="BirimBilgisiGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimBilgisiGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="BirimdekiPersonelBilgisiGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimdekiPersonelBilgisiGetir" />
+  </wsdl:message>
+  <wsdl:message name="BirimdekiPersonelBilgisiGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimdekiPersonelBilgisiGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="BirimBilgisiGetirAdindanSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimBilgisiGetirAdindan" />
+  </wsdl:message>
+  <wsdl:message name="BirimBilgisiGetirAdindanSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimBilgisiGetirAdindanResponse" />
+  </wsdl:message>
+  <wsdl:message name="BirimGrupBaskaniGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimGrupBaskaniGetir" />
+  </wsdl:message>
+  <wsdl:message name="BirimGrupBaskaniGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimGrupBaskaniGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelSorumlulukGetirTCdenSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelSorumlulukGetirTCden" />
+  </wsdl:message>
+  <wsdl:message name="PersonelSorumlulukGetirTCdenSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelSorumlulukGetirTCdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelSorumlulukGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelSorumlulukGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelSorumlulukGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelSorumlulukGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="MudurlukAltindakiIzinliSayisiSoapIn">
+    <wsdl:part name="parameters" element="tns:MudurlukAltindakiIzinliSayisi" />
+  </wsdl:message>
+  <wsdl:message name="MudurlukAltindakiIzinliSayisiSoapOut">
+    <wsdl:part name="parameters" element="tns:MudurlukAltindakiIzinliSayisiResponse" />
+  </wsdl:message>
+  <wsdl:message name="MudurlukAltindakiIzinliSayisiSorumluluktanSoapIn">
+    <wsdl:part name="parameters" element="tns:MudurlukAltindakiIzinliSayisiSorumluluktan" />
+  </wsdl:message>
+  <wsdl:message name="MudurlukAltindakiIzinliSayisiSorumluluktanSoapOut">
+    <wsdl:part name="parameters" element="tns:MudurlukAltindakiIzinliSayisiSorumluluktanResponse" />
+  </wsdl:message>
+  <wsdl:message name="AmirleriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:AmirleriGetir" />
+  </wsdl:message>
+  <wsdl:message name="AmirleriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:AmirleriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="AmirleriGetirSorumluluktanSoapIn">
+    <wsdl:part name="parameters" element="tns:AmirleriGetirSorumluluktan" />
+  </wsdl:message>
+  <wsdl:message name="AmirleriGetirSorumluluktanSoapOut">
+    <wsdl:part name="parameters" element="tns:AmirleriGetirSorumluluktanResponse" />
+  </wsdl:message>
+  <wsdl:message name="FirmaPersonelAmirleriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:FirmaPersonelAmirleriGetir" />
+  </wsdl:message>
+  <wsdl:message name="FirmaPersonelAmirleriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:FirmaPersonelAmirleriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="MudurlukAltindakiBirimlerSoapIn">
+    <wsdl:part name="parameters" element="tns:MudurlukAltindakiBirimler" />
+  </wsdl:message>
+  <wsdl:message name="MudurlukAltindakiBirimlerSoapOut">
+    <wsdl:part name="parameters" element="tns:MudurlukAltindakiBirimlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelKadroListesiSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelKadroListesi" />
+  </wsdl:message>
+  <wsdl:message name="PersonelKadroListesiSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelKadroListesiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinVekaletGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinVekaletGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinVekaletGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinVekaletGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelKadroListesiSorumluluktanSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelKadroListesiSorumluluktan" />
+  </wsdl:message>
+  <wsdl:message name="PersonelKadroListesiSorumluluktanSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelKadroListesiSorumluluktanResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileri" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEnstIciHizmetGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelEnstIciHizmetGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEnstIciHizmetGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelEnstIciHizmetGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriFPDahilSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriFPDahil" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriFPDahilSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriFPDahilResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriEPostadanSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriEPostadan" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriEPostadanSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriEPostadanResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirTcdenSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirTcden" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirTcdenSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirTcdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirTcAdSoyadSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirTcAdSoyad" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirTcAdSoyadSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirTcAdSoyadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsyeriCalisanSayisiGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:IsyeriCalisanSayisiGetir" />
+  </wsdl:message>
+  <wsdl:message name="IsyeriCalisanSayisiGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:IsyeriCalisanSayisiGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirPersonelUndenSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirPersonelUnden" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirPersonelUndenSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirPersonelUndenResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriSorumluluktanSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriSorumluluktan" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriSorumluluktanSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriSorumluluktanResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriAyrilanlarDahilSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriAyrilanlarDahil" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgileriAyrilanlarDahilSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgileriAyrilanlarDahilResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirByBirimUNSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirByBirimUN" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBilgiGetirByBirimUNSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBilgiGetirByBirimUNResponse" />
+  </wsdl:message>
+  <wsdl:message name="KullaniciUnvanGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:KullaniciUnvanGetir" />
+  </wsdl:message>
+  <wsdl:message name="KullaniciUnvanGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:KullaniciUnvanGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEgitimGetirByKullaniciUNSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelEgitimGetirByKullaniciUN" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEgitimGetirByKullaniciUNSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelEgitimGetirByKullaniciUNResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEgitimDosyaYoluKaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelEgitimDosyaYoluKaydet" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEgitimDosyaYoluKaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelEgitimDosyaYoluKaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="BirimListesiAsJsonSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimListesiAsJson" />
+  </wsdl:message>
+  <wsdl:message name="BirimListesiAsJsonSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimListesiAsJsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelVekaletGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelVekaletGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelVekaletGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelVekaletGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciKategoriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:TetkikciKategoriGetir" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciKategoriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:TetkikciKategoriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciNaceGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:TetkikciNaceGetir" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciNaceGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:TetkikciNaceGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelVekaletGetirSorumluluktanSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelVekaletGetirSorumluluktan" />
+  </wsdl:message>
+  <wsdl:message name="PersonelVekaletGetirSorumluluktanSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelVekaletGetirSorumluluktanResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinOnayNoAlSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinOnayNoAl" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinOnayNoAlSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinOnayNoAlResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelGorevIzinGirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelGorevIzinGir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelGorevIzinGirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelGorevIzinGirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinHavaleEdildiSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinHavaleEdildi" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinHavaleEdildiSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinHavaleEdildiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciKategoriGirSoapIn">
+    <wsdl:part name="parameters" element="tns:TetkikciKategoriGir" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciKategoriGirSoapOut">
+    <wsdl:part name="parameters" element="tns:TetkikciKategoriGirResponse" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciNaceGirSoapIn">
+    <wsdl:part name="parameters" element="tns:TetkikciNaceGir" />
+  </wsdl:message>
+  <wsdl:message name="TetkikciNaceGirSoapOut">
+    <wsdl:part name="parameters" element="tns:TetkikciNaceGirResponse" />
+  </wsdl:message>
+  <wsdl:message name="YetkiNetKullaniciGirSoapIn">
+    <wsdl:part name="parameters" element="tns:YetkiNetKullaniciGir" />
+  </wsdl:message>
+  <wsdl:message name="YetkiNetKullaniciGirSoapOut">
+    <wsdl:part name="parameters" element="tns:YetkiNetKullaniciGirResponse" />
+  </wsdl:message>
+  <wsdl:message name="VekaletKullaniciUNGetirByPersonelUNSoapIn">
+    <wsdl:part name="parameters" element="tns:VekaletKullaniciUNGetirByPersonelUN" />
+  </wsdl:message>
+  <wsdl:message name="VekaletKullaniciUNGetirByPersonelUNSoapOut">
+    <wsdl:part name="parameters" element="tns:VekaletKullaniciUNGetirByPersonelUNResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBimserSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelBimser" />
+  </wsdl:message>
+  <wsdl:message name="PersonelBimserSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelBimserResponse" />
+  </wsdl:message>
+  <wsdl:message name="BasvuruBolumGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:BasvuruBolumGetir" />
+  </wsdl:message>
+  <wsdl:message name="BasvuruBolumGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:BasvuruBolumGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PuanTuruGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PuanTuruGetir" />
+  </wsdl:message>
+  <wsdl:message name="PuanTuruGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PuanTuruGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="BasvuruEkTuruGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:BasvuruEkTuruGetir" />
+  </wsdl:message>
+  <wsdl:message name="BasvuruEkTuruGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:BasvuruEkTuruGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="BirimGetirBySskIDSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimGetirBySskID" />
+  </wsdl:message>
+  <wsdl:message name="BirimGetirBySskIDSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimGetirBySskIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsyeriGetirBySskIDSoapIn">
+    <wsdl:part name="parameters" element="tns:IsyeriGetirBySskID" />
+  </wsdl:message>
+  <wsdl:message name="IsyeriGetirBySskIDSoapOut">
+    <wsdl:part name="parameters" element="tns:IsyeriGetirBySskIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ParametreGetirYilAySoapIn">
+    <wsdl:part name="parameters" element="tns:ParametreGetirYilAy" />
+  </wsdl:message>
+  <wsdl:message name="ParametreGetirYilAySoapOut">
+    <wsdl:part name="parameters" element="tns:ParametreGetirYilAyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SslXmlVeriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SslXmlVeriGetir" />
+  </wsdl:message>
+  <wsdl:message name="SslXmlVeriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SslXmlVeriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SigortaPrimEsasUcretDigerGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SigortaPrimEsasUcretDigerGetir" />
+  </wsdl:message>
+  <wsdl:message name="SigortaPrimEsasUcretDigerGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SigortaPrimEsasUcretDigerGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="UlkeGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:UlkeGetir" />
+  </wsdl:message>
+  <wsdl:message name="UlkeGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:UlkeGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinTuruGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinTuruGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinTuruGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinTuruGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="BirimGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:BirimGetir" />
+  </wsdl:message>
+  <wsdl:message name="BirimGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:BirimGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="KadroUnvanGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:KadroUnvanGetir" />
+  </wsdl:message>
+  <wsdl:message name="KadroUnvanGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:KadroUnvanGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelGetirByPersonelUNSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelGetirByPersonelUN" />
+  </wsdl:message>
+  <wsdl:message name="PersonelGetirByPersonelUNSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelGetirByPersonelUNResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelOnayliIzinleriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelOnayliIzinleriGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelOnayliIzinleriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelOnayliIzinleriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelOnaysizIzinleriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelOnaysizIzinleriGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelOnaysizIzinleriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelOnaysizIzinleriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelResimGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelResimGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelResimGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelResimGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelAmirleriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelAmirleriGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelAmirleriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelAmirleriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="YetkiNetUNGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:YetkiNetUNGetir" />
+  </wsdl:message>
+  <wsdl:message name="YetkiNetUNGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:YetkiNetUNGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelUnGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelUnGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelUnGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelUnGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelAmirGetirFPdenSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelAmirGetirFPden" />
+  </wsdl:message>
+  <wsdl:message name="PersonelAmirGetirFPdenSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelAmirGetirFPdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelAraTabloIzinGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelAraTabloIzinGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelAraTabloIzinGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelAraTabloIzinGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelGercekTabloIzinGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelGercekTabloIzinGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelGercekTabloIzinGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelGercekTabloIzinGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinKaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinKaydet" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinKaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinKaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelKaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelKaydet" />
+  </wsdl:message>
+  <wsdl:message name="PersonelKaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelKaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinAraTabloKaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelIzinAraTabloKaydet" />
+  </wsdl:message>
+  <wsdl:message name="PersonelIzinAraTabloKaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelIzinAraTabloKaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEgitimIzinGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:PersonelEgitimIzinGetir" />
+  </wsdl:message>
+  <wsdl:message name="PersonelEgitimIzinGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:PersonelEgitimIzinGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResmiTatilGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:ResmiTatilGetir" />
+  </wsdl:message>
+  <wsdl:message name="ResmiTatilGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:ResmiTatilGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="EReceteRaporGirSoapIn">
+    <wsdl:part name="parameters" element="tns:EReceteRaporGir" />
+  </wsdl:message>
+  <wsdl:message name="EReceteRaporGirSoapOut">
+    <wsdl:part name="parameters" element="tns:EReceteRaporGirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsYeriGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:IsYeriGetir" />
+  </wsdl:message>
+  <wsdl:message name="IsYeriGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:IsYeriGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="HesaplamaUNGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:HesaplamaUNGetir" />
+  </wsdl:message>
+  <wsdl:message name="HesaplamaUNGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:HesaplamaUNGetirResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ikbsSoap">
+    <wsdl:operation name="BirimListesi">
+      <wsdl:input message="tns:BirimListesiSoapIn" />
+      <wsdl:output message="tns:BirimListesiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelListesi">
+      <wsdl:input message="tns:PersonelListesiSoapIn" />
+      <wsdl:output message="tns:PersonelListesiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelListesiPDKS">
+      <wsdl:input message="tns:PersonelListesiPDKSSoapIn" />
+      <wsdl:output message="tns:PersonelListesiPDKSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinListesiPDKS">
+      <wsdl:input message="tns:PersonelIzinListesiPDKSSoapIn" />
+      <wsdl:output message="tns:PersonelIzinListesiPDKSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinGorulduYapPDKS">
+      <wsdl:input message="tns:PersonelIzinGorulduYapPDKSSoapIn" />
+      <wsdl:output message="tns:PersonelIzinGorulduYapPDKSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinEntegrasyon">
+      <wsdl:input message="tns:PersonelIzinEntegrasyonSoapIn" />
+      <wsdl:output message="tns:PersonelIzinEntegrasyonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinKontrol">
+      <wsdl:input message="tns:PersonelIzinKontrolSoapIn" />
+      <wsdl:output message="tns:PersonelIzinKontrolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IzinliMi">
+      <wsdl:input message="tns:IzinliMiSoapIn" />
+      <wsdl:output message="tns:IzinliMiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BirimBilgisiGetir">
+      <wsdl:input message="tns:BirimBilgisiGetirSoapIn" />
+      <wsdl:output message="tns:BirimBilgisiGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BirimdekiPersonelBilgisiGetir">
+      <wsdl:input message="tns:BirimdekiPersonelBilgisiGetirSoapIn" />
+      <wsdl:output message="tns:BirimdekiPersonelBilgisiGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BirimBilgisiGetirAdindan">
+      <wsdl:input message="tns:BirimBilgisiGetirAdindanSoapIn" />
+      <wsdl:output message="tns:BirimBilgisiGetirAdindanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BirimGrupBaskaniGetir">
+      <wsdl:input message="tns:BirimGrupBaskaniGetirSoapIn" />
+      <wsdl:output message="tns:BirimGrupBaskaniGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelSorumlulukGetirTCden">
+      <wsdl:input message="tns:PersonelSorumlulukGetirTCdenSoapIn" />
+      <wsdl:output message="tns:PersonelSorumlulukGetirTCdenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelSorumlulukGetir">
+      <wsdl:input message="tns:PersonelSorumlulukGetirSoapIn" />
+      <wsdl:output message="tns:PersonelSorumlulukGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiIzinliSayisi">
+      <wsdl:input message="tns:MudurlukAltindakiIzinliSayisiSoapIn" />
+      <wsdl:output message="tns:MudurlukAltindakiIzinliSayisiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiIzinliSayisiSorumluluktan">
+      <wsdl:input message="tns:MudurlukAltindakiIzinliSayisiSorumluluktanSoapIn" />
+      <wsdl:output message="tns:MudurlukAltindakiIzinliSayisiSorumluluktanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AmirleriGetir">
+      <wsdl:input message="tns:AmirleriGetirSoapIn" />
+      <wsdl:output message="tns:AmirleriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AmirleriGetirSorumluluktan">
+      <wsdl:input message="tns:AmirleriGetirSorumluluktanSoapIn" />
+      <wsdl:output message="tns:AmirleriGetirSorumluluktanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FirmaPersonelAmirleriGetir">
+      <wsdl:input message="tns:FirmaPersonelAmirleriGetirSoapIn" />
+      <wsdl:output message="tns:FirmaPersonelAmirleriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiBirimler">
+      <wsdl:input message="tns:MudurlukAltindakiBirimlerSoapIn" />
+      <wsdl:output message="tns:MudurlukAltindakiBirimlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKadroListesi">
+      <wsdl:input message="tns:PersonelKadroListesiSoapIn" />
+      <wsdl:output message="tns:PersonelKadroListesiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinVekaletGetir">
+      <wsdl:input message="tns:PersonelIzinVekaletGetirSoapIn" />
+      <wsdl:output message="tns:PersonelIzinVekaletGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKadroListesiSorumluluktan">
+      <wsdl:input message="tns:PersonelKadroListesiSorumluluktanSoapIn" />
+      <wsdl:output message="tns:PersonelKadroListesiSorumluluktanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileri">
+      <wsdl:input message="tns:PersonelBilgileriSoapIn" />
+      <wsdl:output message="tns:PersonelBilgileriSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEnstIciHizmetGetir">
+      <wsdl:input message="tns:PersonelEnstIciHizmetGetirSoapIn" />
+      <wsdl:output message="tns:PersonelEnstIciHizmetGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriFPDahil">
+      <wsdl:input message="tns:PersonelBilgileriFPDahilSoapIn" />
+      <wsdl:output message="tns:PersonelBilgileriFPDahilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriEPostadan">
+      <wsdl:input message="tns:PersonelBilgileriEPostadanSoapIn" />
+      <wsdl:output message="tns:PersonelBilgileriEPostadanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirTcden">
+      <wsdl:input message="tns:PersonelBilgiGetirTcdenSoapIn" />
+      <wsdl:output message="tns:PersonelBilgiGetirTcdenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirTcAdSoyad">
+      <wsdl:input message="tns:PersonelBilgiGetirTcAdSoyadSoapIn" />
+      <wsdl:output message="tns:PersonelBilgiGetirTcAdSoyadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsyeriCalisanSayisiGetir">
+      <wsdl:input message="tns:IsyeriCalisanSayisiGetirSoapIn" />
+      <wsdl:output message="tns:IsyeriCalisanSayisiGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirPersonelUnden">
+      <wsdl:input message="tns:PersonelBilgiGetirPersonelUndenSoapIn" />
+      <wsdl:output message="tns:PersonelBilgiGetirPersonelUndenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriSorumluluktan">
+      <wsdl:input message="tns:PersonelBilgileriSorumluluktanSoapIn" />
+      <wsdl:output message="tns:PersonelBilgileriSorumluluktanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriAyrilanlarDahil">
+      <wsdl:input message="tns:PersonelBilgileriAyrilanlarDahilSoapIn" />
+      <wsdl:output message="tns:PersonelBilgileriAyrilanlarDahilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirByBirimUN">
+      <wsdl:input message="tns:PersonelBilgiGetirByBirimUNSoapIn" />
+      <wsdl:output message="tns:PersonelBilgiGetirByBirimUNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KullaniciUnvanGetir">
+      <wsdl:input message="tns:KullaniciUnvanGetirSoapIn" />
+      <wsdl:output message="tns:KullaniciUnvanGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimGetirByKullaniciUN">
+      <wsdl:input message="tns:PersonelEgitimGetirByKullaniciUNSoapIn" />
+      <wsdl:output message="tns:PersonelEgitimGetirByKullaniciUNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimDosyaYoluKaydet">
+      <wsdl:input message="tns:PersonelEgitimDosyaYoluKaydetSoapIn" />
+      <wsdl:output message="tns:PersonelEgitimDosyaYoluKaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BirimListesiAsJson">
+      <wsdl:input message="tns:BirimListesiAsJsonSoapIn" />
+      <wsdl:output message="tns:BirimListesiAsJsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelVekaletGetir">
+      <wsdl:input message="tns:PersonelVekaletGetirSoapIn" />
+      <wsdl:output message="tns:PersonelVekaletGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciKategoriGetir">
+      <wsdl:input message="tns:TetkikciKategoriGetirSoapIn" />
+      <wsdl:output message="tns:TetkikciKategoriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciNaceGetir">
+      <wsdl:input message="tns:TetkikciNaceGetirSoapIn" />
+      <wsdl:output message="tns:TetkikciNaceGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelVekaletGetirSorumluluktan">
+      <wsdl:input message="tns:PersonelVekaletGetirSorumluluktanSoapIn" />
+      <wsdl:output message="tns:PersonelVekaletGetirSorumluluktanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinOnayNoAl">
+      <wsdl:input message="tns:PersonelIzinOnayNoAlSoapIn" />
+      <wsdl:output message="tns:PersonelIzinOnayNoAlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGorevIzinGir">
+      <wsdl:input message="tns:PersonelGorevIzinGirSoapIn" />
+      <wsdl:output message="tns:PersonelGorevIzinGirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinHavaleEdildi">
+      <wsdl:input message="tns:PersonelIzinHavaleEdildiSoapIn" />
+      <wsdl:output message="tns:PersonelIzinHavaleEdildiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciKategoriGir">
+      <wsdl:input message="tns:TetkikciKategoriGirSoapIn" />
+      <wsdl:output message="tns:TetkikciKategoriGirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciNaceGir">
+      <wsdl:input message="tns:TetkikciNaceGirSoapIn" />
+      <wsdl:output message="tns:TetkikciNaceGirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YetkiNetKullaniciGir">
+      <wsdl:input message="tns:YetkiNetKullaniciGirSoapIn" />
+      <wsdl:output message="tns:YetkiNetKullaniciGirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VekaletKullaniciUNGetirByPersonelUN">
+      <wsdl:input message="tns:VekaletKullaniciUNGetirByPersonelUNSoapIn" />
+      <wsdl:output message="tns:VekaletKullaniciUNGetirByPersonelUNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBimser">
+      <wsdl:input message="tns:PersonelBimserSoapIn" />
+      <wsdl:output message="tns:PersonelBimserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BasvuruBolumGetir">
+      <wsdl:input message="tns:BasvuruBolumGetirSoapIn" />
+      <wsdl:output message="tns:BasvuruBolumGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PuanTuruGetir">
+      <wsdl:input message="tns:PuanTuruGetirSoapIn" />
+      <wsdl:output message="tns:PuanTuruGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BasvuruEkTuruGetir">
+      <wsdl:input message="tns:BasvuruEkTuruGetirSoapIn" />
+      <wsdl:output message="tns:BasvuruEkTuruGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BirimGetirBySskID">
+      <wsdl:input message="tns:BirimGetirBySskIDSoapIn" />
+      <wsdl:output message="tns:BirimGetirBySskIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsyeriGetirBySskID">
+      <wsdl:input message="tns:IsyeriGetirBySskIDSoapIn" />
+      <wsdl:output message="tns:IsyeriGetirBySskIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ParametreGetirYilAy">
+      <wsdl:input message="tns:ParametreGetirYilAySoapIn" />
+      <wsdl:output message="tns:ParametreGetirYilAySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SslXmlVeriGetir">
+      <wsdl:input message="tns:SslXmlVeriGetirSoapIn" />
+      <wsdl:output message="tns:SslXmlVeriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SigortaPrimEsasUcretDigerGetir">
+      <wsdl:input message="tns:SigortaPrimEsasUcretDigerGetirSoapIn" />
+      <wsdl:output message="tns:SigortaPrimEsasUcretDigerGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UlkeGetir">
+      <wsdl:input message="tns:UlkeGetirSoapIn" />
+      <wsdl:output message="tns:UlkeGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinTuruGetir">
+      <wsdl:input message="tns:PersonelIzinTuruGetirSoapIn" />
+      <wsdl:output message="tns:PersonelIzinTuruGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BirimGetir">
+      <wsdl:input message="tns:BirimGetirSoapIn" />
+      <wsdl:output message="tns:BirimGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KadroUnvanGetir">
+      <wsdl:input message="tns:KadroUnvanGetirSoapIn" />
+      <wsdl:output message="tns:KadroUnvanGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGetirByPersonelUN">
+      <wsdl:input message="tns:PersonelGetirByPersonelUNSoapIn" />
+      <wsdl:output message="tns:PersonelGetirByPersonelUNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelOnayliIzinleriGetir">
+      <wsdl:input message="tns:PersonelOnayliIzinleriGetirSoapIn" />
+      <wsdl:output message="tns:PersonelOnayliIzinleriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelOnaysizIzinleriGetir">
+      <wsdl:input message="tns:PersonelOnaysizIzinleriGetirSoapIn" />
+      <wsdl:output message="tns:PersonelOnaysizIzinleriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelResimGetir">
+      <wsdl:input message="tns:PersonelResimGetirSoapIn" />
+      <wsdl:output message="tns:PersonelResimGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAmirleriGetir">
+      <wsdl:input message="tns:PersonelAmirleriGetirSoapIn" />
+      <wsdl:output message="tns:PersonelAmirleriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YetkiNetUNGetir">
+      <wsdl:input message="tns:YetkiNetUNGetirSoapIn" />
+      <wsdl:output message="tns:YetkiNetUNGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelUnGetir">
+      <wsdl:input message="tns:PersonelUnGetirSoapIn" />
+      <wsdl:output message="tns:PersonelUnGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAmirGetirFPden">
+      <wsdl:input message="tns:PersonelAmirGetirFPdenSoapIn" />
+      <wsdl:output message="tns:PersonelAmirGetirFPdenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAraTabloIzinGetir">
+      <wsdl:input message="tns:PersonelAraTabloIzinGetirSoapIn" />
+      <wsdl:output message="tns:PersonelAraTabloIzinGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGercekTabloIzinGetir">
+      <wsdl:input message="tns:PersonelGercekTabloIzinGetirSoapIn" />
+      <wsdl:output message="tns:PersonelGercekTabloIzinGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinKaydet">
+      <wsdl:input message="tns:PersonelIzinKaydetSoapIn" />
+      <wsdl:output message="tns:PersonelIzinKaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKaydet">
+      <wsdl:input message="tns:PersonelKaydetSoapIn" />
+      <wsdl:output message="tns:PersonelKaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinAraTabloKaydet">
+      <wsdl:input message="tns:PersonelIzinAraTabloKaydetSoapIn" />
+      <wsdl:output message="tns:PersonelIzinAraTabloKaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimIzinGetir">
+      <wsdl:input message="tns:PersonelEgitimIzinGetirSoapIn" />
+      <wsdl:output message="tns:PersonelEgitimIzinGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResmiTatilGetir">
+      <wsdl:input message="tns:ResmiTatilGetirSoapIn" />
+      <wsdl:output message="tns:ResmiTatilGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EReceteRaporGir">
+      <wsdl:input message="tns:EReceteRaporGirSoapIn" />
+      <wsdl:output message="tns:EReceteRaporGirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsYeriGetir">
+      <wsdl:input message="tns:IsYeriGetirSoapIn" />
+      <wsdl:output message="tns:IsYeriGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HesaplamaUNGetir">
+      <wsdl:input message="tns:HesaplamaUNGetirSoapIn" />
+      <wsdl:output message="tns:HesaplamaUNGetirSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ikbsSoap" type="tns:ikbsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BirimListesi">
+      <soap:operation soapAction="http://tempuri.org/BirimListesi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelListesi">
+      <soap:operation soapAction="http://tempuri.org/PersonelListesi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelListesiPDKS">
+      <soap:operation soapAction="http://tempuri.org/PersonelListesiPDKS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinListesiPDKS">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinListesiPDKS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinGorulduYapPDKS">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinGorulduYapPDKS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinEntegrasyon">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinEntegrasyon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinKontrol">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinKontrol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzinliMi">
+      <soap:operation soapAction="http://tempuri.org/IzinliMi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimBilgisiGetir">
+      <soap:operation soapAction="http://tempuri.org/BirimBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimdekiPersonelBilgisiGetir">
+      <soap:operation soapAction="http://tempuri.org/BirimdekiPersonelBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimBilgisiGetirAdindan">
+      <soap:operation soapAction="http://tempuri.org/BirimBilgisiGetirAdindan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimGrupBaskaniGetir">
+      <soap:operation soapAction="http://tempuri.org/BirimGrupBaskaniGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelSorumlulukGetirTCden">
+      <soap:operation soapAction="http://tempuri.org/PersonelSorumlulukGetirTCden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelSorumlulukGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelSorumlulukGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiIzinliSayisi">
+      <soap:operation soapAction="http://tempuri.org/MudurlukAltindakiIzinliSayisi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiIzinliSayisiSorumluluktan">
+      <soap:operation soapAction="http://tempuri.org/MudurlukAltindakiIzinliSayisiSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AmirleriGetir">
+      <soap:operation soapAction="http://tempuri.org/AmirleriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AmirleriGetirSorumluluktan">
+      <soap:operation soapAction="http://tempuri.org/AmirleriGetirSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FirmaPersonelAmirleriGetir">
+      <soap:operation soapAction="http://tempuri.org/FirmaPersonelAmirleriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiBirimler">
+      <soap:operation soapAction="http://tempuri.org/MudurlukAltindakiBirimler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKadroListesi">
+      <soap:operation soapAction="http://tempuri.org/PersonelKadroListesi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinVekaletGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinVekaletGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKadroListesiSorumluluktan">
+      <soap:operation soapAction="http://tempuri.org/PersonelKadroListesiSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileri">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgileri" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEnstIciHizmetGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelEnstIciHizmetGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriFPDahil">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgileriFPDahil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriEPostadan">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgileriEPostadan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirTcden">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgiGetirTcden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirTcAdSoyad">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgiGetirTcAdSoyad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsyeriCalisanSayisiGetir">
+      <soap:operation soapAction="http://tempuri.org/IsyeriCalisanSayisiGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirPersonelUnden">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgiGetirPersonelUnden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriSorumluluktan">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgileriSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriAyrilanlarDahil">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgileriAyrilanlarDahil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirByBirimUN">
+      <soap:operation soapAction="http://tempuri.org/PersonelBilgiGetirByBirimUN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KullaniciUnvanGetir">
+      <soap:operation soapAction="http://tempuri.org/KullaniciUnvanGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimGetirByKullaniciUN">
+      <soap:operation soapAction="http://tempuri.org/PersonelEgitimGetirByKullaniciUN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimDosyaYoluKaydet">
+      <soap:operation soapAction="http://tempuri.org/PersonelEgitimDosyaYoluKaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimListesiAsJson">
+      <soap:operation soapAction="http://tempuri.org/BirimListesiAsJson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelVekaletGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelVekaletGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciKategoriGetir">
+      <soap:operation soapAction="http://tempuri.org/TetkikciKategoriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciNaceGetir">
+      <soap:operation soapAction="http://tempuri.org/TetkikciNaceGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelVekaletGetirSorumluluktan">
+      <soap:operation soapAction="http://tempuri.org/PersonelVekaletGetirSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinOnayNoAl">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinOnayNoAl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGorevIzinGir">
+      <soap:operation soapAction="http://tempuri.org/PersonelGorevIzinGir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinHavaleEdildi">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinHavaleEdildi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciKategoriGir">
+      <soap:operation soapAction="http://tempuri.org/TetkikciKategoriGir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciNaceGir">
+      <soap:operation soapAction="http://tempuri.org/TetkikciNaceGir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YetkiNetKullaniciGir">
+      <soap:operation soapAction="http://tempuri.org/YetkiNetKullaniciGir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VekaletKullaniciUNGetirByPersonelUN">
+      <soap:operation soapAction="http://tempuri.org/VekaletKullaniciUNGetirByPersonelUN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBimser">
+      <soap:operation soapAction="http://tempuri.org/PersonelBimser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BasvuruBolumGetir">
+      <soap:operation soapAction="http://tempuri.org/BasvuruBolumGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuanTuruGetir">
+      <soap:operation soapAction="http://tempuri.org/PuanTuruGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BasvuruEkTuruGetir">
+      <soap:operation soapAction="http://tempuri.org/BasvuruEkTuruGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimGetirBySskID">
+      <soap:operation soapAction="http://tempuri.org/BirimGetirBySskID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsyeriGetirBySskID">
+      <soap:operation soapAction="http://tempuri.org/IsyeriGetirBySskID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ParametreGetirYilAy">
+      <soap:operation soapAction="http://tempuri.org/ParametreGetirYilAy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SslXmlVeriGetir">
+      <soap:operation soapAction="http://tempuri.org/SslXmlVeriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SigortaPrimEsasUcretDigerGetir">
+      <soap:operation soapAction="http://tempuri.org/SigortaPrimEsasUcretDigerGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlkeGetir">
+      <soap:operation soapAction="http://tempuri.org/UlkeGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinTuruGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinTuruGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimGetir">
+      <soap:operation soapAction="http://tempuri.org/BirimGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KadroUnvanGetir">
+      <soap:operation soapAction="http://tempuri.org/KadroUnvanGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGetirByPersonelUN">
+      <soap:operation soapAction="http://tempuri.org/PersonelGetirByPersonelUN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelOnayliIzinleriGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelOnayliIzinleriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelOnaysizIzinleriGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelOnaysizIzinleriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelResimGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelResimGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAmirleriGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelAmirleriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YetkiNetUNGetir">
+      <soap:operation soapAction="http://tempuri.org/YetkiNetUNGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelUnGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelUnGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAmirGetirFPden">
+      <soap:operation soapAction="http://tempuri.org/PersonelAmirGetirFPden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAraTabloIzinGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelAraTabloIzinGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGercekTabloIzinGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelGercekTabloIzinGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinKaydet">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinKaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKaydet">
+      <soap:operation soapAction="http://tempuri.org/PersonelKaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinAraTabloKaydet">
+      <soap:operation soapAction="http://tempuri.org/PersonelIzinAraTabloKaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimIzinGetir">
+      <soap:operation soapAction="http://tempuri.org/PersonelEgitimIzinGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResmiTatilGetir">
+      <soap:operation soapAction="http://tempuri.org/ResmiTatilGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EReceteRaporGir">
+      <soap:operation soapAction="http://tempuri.org/EReceteRaporGir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsYeriGetir">
+      <soap:operation soapAction="http://tempuri.org/IsYeriGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HesaplamaUNGetir">
+      <soap:operation soapAction="http://tempuri.org/HesaplamaUNGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ikbsSoap12" type="tns:ikbsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BirimListesi">
+      <soap12:operation soapAction="http://tempuri.org/BirimListesi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelListesi">
+      <soap12:operation soapAction="http://tempuri.org/PersonelListesi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelListesiPDKS">
+      <soap12:operation soapAction="http://tempuri.org/PersonelListesiPDKS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinListesiPDKS">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinListesiPDKS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinGorulduYapPDKS">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinGorulduYapPDKS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinEntegrasyon">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinEntegrasyon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinKontrol">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinKontrol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzinliMi">
+      <soap12:operation soapAction="http://tempuri.org/IzinliMi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimBilgisiGetir">
+      <soap12:operation soapAction="http://tempuri.org/BirimBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimdekiPersonelBilgisiGetir">
+      <soap12:operation soapAction="http://tempuri.org/BirimdekiPersonelBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimBilgisiGetirAdindan">
+      <soap12:operation soapAction="http://tempuri.org/BirimBilgisiGetirAdindan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimGrupBaskaniGetir">
+      <soap12:operation soapAction="http://tempuri.org/BirimGrupBaskaniGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelSorumlulukGetirTCden">
+      <soap12:operation soapAction="http://tempuri.org/PersonelSorumlulukGetirTCden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelSorumlulukGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelSorumlulukGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiIzinliSayisi">
+      <soap12:operation soapAction="http://tempuri.org/MudurlukAltindakiIzinliSayisi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiIzinliSayisiSorumluluktan">
+      <soap12:operation soapAction="http://tempuri.org/MudurlukAltindakiIzinliSayisiSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AmirleriGetir">
+      <soap12:operation soapAction="http://tempuri.org/AmirleriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AmirleriGetirSorumluluktan">
+      <soap12:operation soapAction="http://tempuri.org/AmirleriGetirSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FirmaPersonelAmirleriGetir">
+      <soap12:operation soapAction="http://tempuri.org/FirmaPersonelAmirleriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MudurlukAltindakiBirimler">
+      <soap12:operation soapAction="http://tempuri.org/MudurlukAltindakiBirimler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKadroListesi">
+      <soap12:operation soapAction="http://tempuri.org/PersonelKadroListesi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinVekaletGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinVekaletGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKadroListesiSorumluluktan">
+      <soap12:operation soapAction="http://tempuri.org/PersonelKadroListesiSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileri">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgileri" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEnstIciHizmetGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelEnstIciHizmetGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriFPDahil">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgileriFPDahil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriEPostadan">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgileriEPostadan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirTcden">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgiGetirTcden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirTcAdSoyad">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgiGetirTcAdSoyad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsyeriCalisanSayisiGetir">
+      <soap12:operation soapAction="http://tempuri.org/IsyeriCalisanSayisiGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirPersonelUnden">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgiGetirPersonelUnden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriSorumluluktan">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgileriSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgileriAyrilanlarDahil">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgileriAyrilanlarDahil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBilgiGetirByBirimUN">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBilgiGetirByBirimUN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KullaniciUnvanGetir">
+      <soap12:operation soapAction="http://tempuri.org/KullaniciUnvanGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimGetirByKullaniciUN">
+      <soap12:operation soapAction="http://tempuri.org/PersonelEgitimGetirByKullaniciUN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimDosyaYoluKaydet">
+      <soap12:operation soapAction="http://tempuri.org/PersonelEgitimDosyaYoluKaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimListesiAsJson">
+      <soap12:operation soapAction="http://tempuri.org/BirimListesiAsJson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelVekaletGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelVekaletGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciKategoriGetir">
+      <soap12:operation soapAction="http://tempuri.org/TetkikciKategoriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciNaceGetir">
+      <soap12:operation soapAction="http://tempuri.org/TetkikciNaceGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelVekaletGetirSorumluluktan">
+      <soap12:operation soapAction="http://tempuri.org/PersonelVekaletGetirSorumluluktan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinOnayNoAl">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinOnayNoAl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGorevIzinGir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelGorevIzinGir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinHavaleEdildi">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinHavaleEdildi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciKategoriGir">
+      <soap12:operation soapAction="http://tempuri.org/TetkikciKategoriGir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TetkikciNaceGir">
+      <soap12:operation soapAction="http://tempuri.org/TetkikciNaceGir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YetkiNetKullaniciGir">
+      <soap12:operation soapAction="http://tempuri.org/YetkiNetKullaniciGir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VekaletKullaniciUNGetirByPersonelUN">
+      <soap12:operation soapAction="http://tempuri.org/VekaletKullaniciUNGetirByPersonelUN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelBimser">
+      <soap12:operation soapAction="http://tempuri.org/PersonelBimser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BasvuruBolumGetir">
+      <soap12:operation soapAction="http://tempuri.org/BasvuruBolumGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuanTuruGetir">
+      <soap12:operation soapAction="http://tempuri.org/PuanTuruGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BasvuruEkTuruGetir">
+      <soap12:operation soapAction="http://tempuri.org/BasvuruEkTuruGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimGetirBySskID">
+      <soap12:operation soapAction="http://tempuri.org/BirimGetirBySskID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsyeriGetirBySskID">
+      <soap12:operation soapAction="http://tempuri.org/IsyeriGetirBySskID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ParametreGetirYilAy">
+      <soap12:operation soapAction="http://tempuri.org/ParametreGetirYilAy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SslXmlVeriGetir">
+      <soap12:operation soapAction="http://tempuri.org/SslXmlVeriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SigortaPrimEsasUcretDigerGetir">
+      <soap12:operation soapAction="http://tempuri.org/SigortaPrimEsasUcretDigerGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlkeGetir">
+      <soap12:operation soapAction="http://tempuri.org/UlkeGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinTuruGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinTuruGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BirimGetir">
+      <soap12:operation soapAction="http://tempuri.org/BirimGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KadroUnvanGetir">
+      <soap12:operation soapAction="http://tempuri.org/KadroUnvanGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGetirByPersonelUN">
+      <soap12:operation soapAction="http://tempuri.org/PersonelGetirByPersonelUN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelOnayliIzinleriGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelOnayliIzinleriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelOnaysizIzinleriGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelOnaysizIzinleriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelResimGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelResimGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAmirleriGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelAmirleriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YetkiNetUNGetir">
+      <soap12:operation soapAction="http://tempuri.org/YetkiNetUNGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelUnGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelUnGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAmirGetirFPden">
+      <soap12:operation soapAction="http://tempuri.org/PersonelAmirGetirFPden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelAraTabloIzinGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelAraTabloIzinGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelGercekTabloIzinGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelGercekTabloIzinGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinKaydet">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinKaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelKaydet">
+      <soap12:operation soapAction="http://tempuri.org/PersonelKaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelIzinAraTabloKaydet">
+      <soap12:operation soapAction="http://tempuri.org/PersonelIzinAraTabloKaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PersonelEgitimIzinGetir">
+      <soap12:operation soapAction="http://tempuri.org/PersonelEgitimIzinGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResmiTatilGetir">
+      <soap12:operation soapAction="http://tempuri.org/ResmiTatilGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EReceteRaporGir">
+      <soap12:operation soapAction="http://tempuri.org/EReceteRaporGir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsYeriGetir">
+      <soap12:operation soapAction="http://tempuri.org/IsYeriGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HesaplamaUNGetir">
+      <soap12:operation soapAction="http://tempuri.org/HesaplamaUNGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ikbs">
+    <wsdl:port name="ikbsSoap" binding="tns:ikbsSoap">
+      <soap:address location="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ikbsSoap12" binding="tns:ikbsSoap12">
+      <soap12:address location="https://ikbstest.tse.org.tr/webservisler/ikbs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

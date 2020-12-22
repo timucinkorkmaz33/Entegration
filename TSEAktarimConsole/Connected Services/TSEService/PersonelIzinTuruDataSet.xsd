@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/PersonelIzinTuruDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/PersonelIzinTuruDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/PersonelIzinTuruDataSet.xsd" id="PersonelIzinTuruDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PersonelIzinTuruDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PersonelIzinTuru">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IzinID" type="xs:int" />
+              <xs:element minOccurs="0" name="IzinTuru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Silindi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="KacImza" type="xs:int" />
+              <xs:element minOccurs="0" name="IzindenDusecekMi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EvrakZorunluMu" type="xs:boolean" />
+              <xs:element minOccurs="0" name="SaatlikIzin" type="xs:boolean" />
+              <xs:element minOccurs="0" name="GunlukIzin" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="PersonelIzinTuru0">
+      <xs:selector xpath=".//mstns:PersonelIzinTuru" />
+      <xs:field xpath="mstns:IzinID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

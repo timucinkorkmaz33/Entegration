@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TSEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Izinler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SicilID" Type="int" Nullable="false" />
+          <Property Name="TipID" Type="int" Nullable="false" />
+          <Property Name="Tarih" Type="smalldatetime" Nullable="false" />
+          <Property Name="Saatlikizin" Type="bit" Nullable="false" />
+          <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
+          <Property Name="Sure" Type="int" Nullable="false" />
+          <Property Name="Baslangic" Type="int" Nullable="false" />
+          <Property Name="Bitis" Type="int" Nullable="false" />
+          <Property Name="Ucretli" Type="bit" Nullable="false" />
+          <Property Name="SaatlikUcret" Type="int" Nullable="false" />
+          <Property Name="MailSended" Type="int" Nullable="false" />
+          <Property Name="BasTarih" Type="datetime" />
+          <Property Name="BitTarih" Type="datetime" />
+          <Property Name="KarsiAktarimIdTcSicil" Type="nvarchar" MaxLength="150" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="IseBaslamaTarih" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Sicil">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="8" />
+          <Property Name="Firma" Type="int" />
+          <Property Name="TerminalGrubu" Type="int" />
+          <Property Name="Ad" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Soyad" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="PersonelNo" Type="nvarchar" MaxLength="20" />
+          <Property Name="GirisTarih" Type="smalldatetime" />
+          <Property Name="CikisTarih" Type="smalldatetime" />
+          <Property Name="SicilNo" Type="nvarchar" MaxLength="20" />
+          <Property Name="Pozisyon" Type="int" />
+          <Property Name="Bolum" Type="int" />
+          <Property Name="Telefon1" Type="nvarchar" MaxLength="20" />
+          <Property Name="Telefon2" Type="nvarchar" MaxLength="20" />
+          <Property Name="CepTelefon" Type="nvarchar" MaxLength="20" />
+          <Property Name="Adres" Type="nvarchar" MaxLength="100" />
+          <Property Name="IL" Type="nvarchar" MaxLength="20" />
+          <Property Name="Ilce" Type="nvarchar" MaxLength="20" />
+          <Property Name="KanGrubu" Type="int" />
+          <Property Name="FotoImage" Type="image" />
+          <Property Name="Bilgi" Type="ntext" />
+          <Property Name="MesaiPeriyodu" Type="int" Nullable="false" />
+          <Property Name="PeriyodBaslangici" Type="smalldatetime" />
+          <Property Name="SonDurum" Type="bit" Nullable="false" />
+          <Property Name="ExpireDate" Type="smalldatetime" />
+          <Property Name="FazlaMesai" Type="bit" Nullable="false" />
+          <Property Name="EksikMesai" Type="bit" Nullable="false" />
+          <Property Name="EksikMesai_FM" Type="bit" Nullable="false" />
+          <Property Name="ErkenMesai" Type="bit" Nullable="false" />
+          <Property Name="EksikGun" Type="bit" Nullable="false" />
+          <Property Name="MaasTipi" Type="int" Nullable="false" />
+          <Property Name="Maas" Type="int" Nullable="false" />
+          <Property Name="AylikCalismaSaati" Type="real" Nullable="false" />
+          <Property Name="SonTasnifID" Type="int" Nullable="false" />
+          <Property Name="SicilKilit" Type="tinyint" />
+          <Property Name="DogumTarih" Type="smalldatetime" />
+          <Property Name="OKod1" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod2" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod3" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod4" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod5" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod6" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod7" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod8" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod9" Type="nvarchar" MaxLength="50" />
+          <Property Name="OKod10" Type="nvarchar" MaxLength="50" />
+          <Property Name="GeceZammi" Type="bit" Nullable="false" />
+          <Property Name="FM_EM" Type="bit" Nullable="false" />
+          <Property Name="Gorev" Type="int" />
+          <Property Name="bitistarih" Type="datetime" />
+          <Property Name="AltFirma" Type="int" />
+          <Property Name="Cinsiyet" Type="int" />
+          <Property Name="EMail" Type="nvarchar" MaxLength="100" />
+          <Property Name="Direktorluk" Type="int" />
+          <Property Name="Yaka" Type="int" />
+          <Property Name="Puantaj" Type="int" />
+          <Property Name="KidemTarih" Type="smalldatetime" />
+          <Property Name="BirimId" Type="int" />
+          <Property Name="PictureId" Type="nvarchar" MaxLength="500" />
+          <Property Name="ZiyaretciKabulDurum" Type="bit" />
+          <Property Name="GorevId" Type="int" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="AmirId" Type="int" />
+          <Property Name="AmirAdi" Type="nvarchar(max)" />
+          <Property Name="GlobalSicilID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Tbl_Birimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BirimKodu" Type="int" />
+          <Property Name="BirimAdi" Type="nvarchar" MaxLength="150" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="Salon" Type="int" />
+          <Property Name="Mutfak" Type="int" />
+          <Property Name="Kasiyer" Type="int" />
+          <Property Name="Ekstra" Type="int" />
+          <Property Name="SalonId" Type="int" />
+          <Property Name="MutfakId" Type="int" />
+          <Property Name="KasiyerId" Type="int" />
+          <Property Name="EkstraId" Type="int" />
+          <Property Name="CihazID" Type="nvarchar" MaxLength="100" />
+          <Property Name="CihazUstBirimId" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="UserList">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="8" Nullable="false" />
+          <Property Name="CardType" Type="int" Nullable="false" />
+          <Property Name="CardID" Type="nvarchar" MaxLength="15" />
+          <Property Name="CardAttribute" Type="int" Nullable="false" />
+          <Property Name="FacilityCode" Type="nvarchar" MaxLength="8" />
+          <Property Name="FingerID1" Type="nvarchar" MaxLength="4" />
+          <Property Name="FingerID2" Type="nvarchar" MaxLength="4" />
+          <Property Name="FPData" Type="ntext" />
+          <Property Name="UserDef" Type="int" Nullable="false" />
+          <Property Name="Function" Type="int" />
+          <Property Name="Master" Type="int" Nullable="false" />
+          <Property Name="BypassCard" Type="int" Nullable="false" />
+          <Property Name="startdate" Type="datetime" />
+          <Property Name="enddate" Type="datetime" />
+          <Property Name="CardID26" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsTimezone" Type="int" Nullable="false" />
+          <Property Name="Deleted" Type="bit" />
+        </EntityType>
+        <Association Name="FK_Izinler_Sicil">
+          <End Role="Sicil" Type="Self.Sicil" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Izinler" Type="Self.Izinler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sicil">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Izinler">
+              <PropertyRef Name="SicilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sicil_UserList">
+          <End Role="UserList" Type="Self.UserList" Multiplicity="0..1" />
+          <End Role="Sicil" Type="Self.Sicil" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserList">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Sicil">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TSEModelStoreContainer">
+          <EntitySet Name="Izinler" EntityType="Self.Izinler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sicil" EntityType="Self.Sicil" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_Birimler" EntityType="Self.Tbl_Birimler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserList" EntityType="Self.UserList" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Izinler_Sicil" Association="Self.FK_Izinler_Sicil">
+            <End Role="Sicil" EntitySet="Sicil" />
+            <End Role="Izinler" EntitySet="Izinler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sicil_UserList" Association="Self.FK_Sicil_UserList">
+            <End Role="UserList" EntitySet="UserList" />
+            <End Role="Sicil" EntitySet="Sicil" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TSEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Sicil">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="Firma" Type="Int32" />
+          <Property Name="TerminalGrubu" Type="Int32" />
+          <Property Name="Ad" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PersonelNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="GirisTarih" Type="DateTime" Precision="0" />
+          <Property Name="CikisTarih" Type="DateTime" Precision="0" />
+          <Property Name="SicilNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Pozisyon" Type="Int32" />
+          <Property Name="Bolum" Type="Int32" />
+          <Property Name="Telefon1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CepTelefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IL" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Ilce" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="KanGrubu" Type="Int32" />
+          <Property Name="FotoImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Bilgi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MesaiPeriyodu" Type="Int32" Nullable="false" />
+          <Property Name="PeriyodBaslangici" Type="DateTime" Precision="0" />
+          <Property Name="SonDurum" Type="Boolean" Nullable="false" />
+          <Property Name="ExpireDate" Type="DateTime" Precision="0" />
+          <Property Name="FazlaMesai" Type="Boolean" Nullable="false" />
+          <Property Name="EksikMesai" Type="Boolean" Nullable="false" />
+          <Property Name="EksikMesai_FM" Type="Boolean" Nullable="false" />
+          <Property Name="ErkenMesai" Type="Boolean" Nullable="false" />
+          <Property Name="EksikGun" Type="Boolean" Nullable="false" />
+          <Property Name="MaasTipi" Type="Int32" Nullable="false" />
+          <Property Name="Maas" Type="Int32" Nullable="false" />
+          <Property Name="AylikCalismaSaati" Type="Single" Nullable="false" />
+          <Property Name="SonTasnifID" Type="Int32" Nullable="false" />
+          <Property Name="SicilKilit" Type="Byte" />
+          <Property Name="DogumTarih" Type="DateTime" Precision="0" />
+          <Property Name="OKod1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OKod10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GeceZammi" Type="Boolean" Nullable="false" />
+          <Property Name="FM_EM" Type="Boolean" Nullable="false" />
+          <Property Name="Gorev" Type="Int32" />
+          <Property Name="bitistarih" Type="DateTime" Precision="3" />
+          <Property Name="AltFirma" Type="Int32" />
+          <Property Name="Cinsiyet" Type="Int32" />
+          <Property Name="EMail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Direktorluk" Type="Int32" />
+          <Property Name="Yaka" Type="Int32" />
+          <Property Name="Puantaj" Type="Int32" />
+          <Property Name="KidemTarih" Type="DateTime" Precision="0" />
+          <Property Name="BirimId" Type="Int32" />
+          <Property Name="PictureId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ZiyaretciKabulDurum" Type="Boolean" />
+          <Property Name="GorevId" Type="Int32" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="AmirId" Type="Int32" />
+          <Property Name="AmirAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GlobalSicilID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="UserList" Relationship="Self.FK_Sicil_UserList" FromRole="Sicil" ToRole="UserList" />
+          <NavigationProperty Name="Izinler" Relationship="TSEModel.FK_Izinler_Sicil" FromRole="Sicil" ToRole="Izinler" />
+        </EntityType>
+        <EntityType Name="UserList">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CardType" Type="Int32" Nullable="false" />
+          <Property Name="CardID" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="CardAttribute" Type="Int32" Nullable="false" />
+          <Property Name="FacilityCode" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FingerID1" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="FingerID2" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="FPData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserDef" Type="Int32" Nullable="false" />
+          <Property Name="Function" Type="Int32" />
+          <Property Name="Master" Type="Int32" Nullable="false" />
+          <Property Name="BypassCard" Type="Int32" Nullable="false" />
+          <Property Name="startdate" Type="DateTime" Precision="3" />
+          <Property Name="enddate" Type="DateTime" Precision="3" />
+          <Property Name="CardID26" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsTimezone" Type="Int32" Nullable="false" />
+          <Property Name="Deleted" Type="Boolean" />
+          <NavigationProperty Name="Sicil" Relationship="Self.FK_Sicil_UserList" FromRole="UserList" ToRole="Sicil" />
+        </EntityType>
+        <Association Name="FK_Sicil_UserList">
+          <End Role="UserList" Type="Self.UserList" Multiplicity="0..1" />
+          <End Role="Sicil" Type="Self.Sicil" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserList">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="Sicil">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TSEEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Sicil" EntityType="Self.Sicil" />
+          <EntitySet Name="UserList" EntityType="Self.UserList" />
+          <AssociationSet Name="FK_Sicil_UserList" Association="Self.FK_Sicil_UserList">
+            <End Role="UserList" EntitySet="UserList" />
+            <End Role="Sicil" EntitySet="Sicil" />
+          </AssociationSet>
+          <EntitySet Name="Tbl_Birimler" EntityType="TSEModel.Tbl_Birimler" />
+          <EntitySet Name="Izinler" EntityType="TSEModel.Izinler" />
+          <AssociationSet Name="FK_Izinler_Sicil" Association="TSEModel.FK_Izinler_Sicil">
+            <End Role="Sicil" EntitySet="Sicil" />
+            <End Role="Izinler" EntitySet="Izinler" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Tbl_Birimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BirimKodu" Type="Int32" />
+          <Property Name="BirimAdi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="Salon" Type="Int32" />
+          <Property Name="Mutfak" Type="Int32" />
+          <Property Name="Kasiyer" Type="Int32" />
+          <Property Name="Ekstra" Type="Int32" />
+          <Property Name="SalonId" Type="Int32" />
+          <Property Name="MutfakId" Type="Int32" />
+          <Property Name="KasiyerId" Type="Int32" />
+          <Property Name="EkstraId" Type="Int32" />
+          <Property Name="CihazID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CihazUstBirimId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Izinler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SicilID" Type="Int32" Nullable="false" />
+          <Property Name="TipID" Type="Int32" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Saatlikizin" Type="Boolean" Nullable="false" />
+          <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Sure" Type="Int32" Nullable="false" />
+          <Property Name="Baslangic" Type="Int32" Nullable="false" />
+          <Property Name="Bitis" Type="Int32" Nullable="false" />
+          <Property Name="Ucretli" Type="Boolean" Nullable="false" />
+          <Property Name="SaatlikUcret" Type="Int32" Nullable="false" />
+          <Property Name="MailSended" Type="Int32" Nullable="false" />
+          <Property Name="BasTarih" Type="DateTime" Precision="3" />
+          <Property Name="BitTarih" Type="DateTime" Precision="3" />
+          <Property Name="KarsiAktarimIdTcSicil" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="IseBaslamaTarih" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Sicil" Relationship="TSEModel.FK_Izinler_Sicil" FromRole="Izinler" ToRole="Sicil" />
+        </EntityType>
+        <Association Name="FK_Izinler_Sicil">
+          <End Type="TSEModel.Sicil" Role="Sicil" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="TSEModel.Izinler" Role="Izinler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sicil">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Izinler">
+              <PropertyRef Name="SicilID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TSEModelStoreContainer" CdmEntityContainer="TSEEntities">
+          <EntitySetMapping Name="Sicil">
+            <EntityTypeMapping TypeName="TSEModel.Sicil">
+              <MappingFragment StoreEntitySet="Sicil">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Firma" ColumnName="Firma" />
+                <ScalarProperty Name="TerminalGrubu" ColumnName="TerminalGrubu" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="PersonelNo" ColumnName="PersonelNo" />
+                <ScalarProperty Name="GirisTarih" ColumnName="GirisTarih" />
+                <ScalarProperty Name="CikisTarih" ColumnName="CikisTarih" />
+                <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+                <ScalarProperty Name="Pozisyon" ColumnName="Pozisyon" />
+                <ScalarProperty Name="Bolum" ColumnName="Bolum" />
+                <ScalarProperty Name="Telefon1" ColumnName="Telefon1" />
+                <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+                <ScalarProperty Name="CepTelefon" ColumnName="CepTelefon" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="IL" ColumnName="IL" />
+                <ScalarProperty Name="Ilce" ColumnName="Ilce" />
+                <ScalarProperty Name="KanGrubu" ColumnName="KanGrubu" />
+                <ScalarProperty Name="FotoImage" ColumnName="FotoImage" />
+                <ScalarProperty Name="Bilgi" ColumnName="Bilgi" />
+                <ScalarProperty Name="MesaiPeriyodu" ColumnName="MesaiPeriyodu" />
+                <ScalarProperty Name="PeriyodBaslangici" ColumnName="PeriyodBaslangici" />
+                <ScalarProperty Name="SonDurum" ColumnName="SonDurum" />
+                <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+                <ScalarProperty Name="FazlaMesai" ColumnName="FazlaMesai" />
+                <ScalarProperty Name="EksikMesai" ColumnName="EksikMesai" />
+                <ScalarProperty Name="EksikMesai_FM" ColumnName="EksikMesai_FM" />
+                <ScalarProperty Name="ErkenMesai" ColumnName="ErkenMesai" />
+                <ScalarProperty Name="EksikGun" ColumnName="EksikGun" />
+                <ScalarProperty Name="MaasTipi" ColumnName="MaasTipi" />
+                <ScalarProperty Name="Maas" ColumnName="Maas" />
+                <ScalarProperty Name="AylikCalismaSaati" ColumnName="AylikCalismaSaati" />
+                <ScalarProperty Name="SonTasnifID" ColumnName="SonTasnifID" />
+                <ScalarProperty Name="SicilKilit" ColumnName="SicilKilit" />
+                <ScalarProperty Name="DogumTarih" ColumnName="DogumTarih" />
+                <ScalarProperty Name="OKod1" ColumnName="OKod1" />
+                <ScalarProperty Name="OKod2" ColumnName="OKod2" />
+                <ScalarProperty Name="OKod3" ColumnName="OKod3" />
+                <ScalarProperty Name="OKod4" ColumnName="OKod4" />
+                <ScalarProperty Name="OKod5" ColumnName="OKod5" />
+                <ScalarProperty Name="OKod6" ColumnName="OKod6" />
+                <ScalarProperty Name="OKod7" ColumnName="OKod7" />
+                <ScalarProperty Name="OKod8" ColumnName="OKod8" />
+                <ScalarProperty Name="OKod9" ColumnName="OKod9" />
+                <ScalarProperty Name="OKod10" ColumnName="OKod10" />
+                <ScalarProperty Name="GeceZammi" ColumnName="GeceZammi" />
+                <ScalarProperty Name="FM_EM" ColumnName="FM_EM" />
+                <ScalarProperty Name="Gorev" ColumnName="Gorev" />
+                <ScalarProperty Name="bitistarih" ColumnName="bitistarih" />
+                <ScalarProperty Name="AltFirma" ColumnName="AltFirma" />
+                <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+                <ScalarProperty Name="EMail" ColumnName="EMail" />
+                <ScalarProperty Name="Direktorluk" ColumnName="Direktorluk" />
+                <ScalarProperty Name="Yaka" ColumnName="Yaka" />
+                <ScalarProperty Name="Puantaj" ColumnName="Puantaj" />
+                <ScalarProperty Name="KidemTarih" ColumnName="KidemTarih" />
+                <ScalarProperty Name="BirimId" ColumnName="BirimId" />
+                <ScalarProperty Name="PictureId" ColumnName="PictureId" />
+                <ScalarProperty Name="ZiyaretciKabulDurum" ColumnName="ZiyaretciKabulDurum" />
+                <ScalarProperty Name="GorevId" ColumnName="GorevId" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="AmirId" ColumnName="AmirId" />
+                <ScalarProperty Name="AmirAdi" ColumnName="AmirAdi" />
+                <ScalarProperty Name="GlobalSicilID" ColumnName="GlobalSicilID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserList">
+            <EntityTypeMapping TypeName="TSEModel.UserList">
+              <MappingFragment StoreEntitySet="UserList">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="CardType" ColumnName="CardType" />
+                <ScalarProperty Name="CardID" ColumnName="CardID" />
+                <ScalarProperty Name="CardAttribute" ColumnName="CardAttribute" />
+                <ScalarProperty Name="FacilityCode" ColumnName="FacilityCode" />
+                <ScalarProperty Name="FingerID1" ColumnName="FingerID1" />
+                <ScalarProperty Name="FingerID2" ColumnName="FingerID2" />
+                <ScalarProperty Name="FPData" ColumnName="FPData" />
+                <ScalarProperty Name="UserDef" ColumnName="UserDef" />
+                <ScalarProperty Name="Function" ColumnName="Function" />
+                <ScalarProperty Name="Master" ColumnName="Master" />
+                <ScalarProperty Name="BypassCard" ColumnName="BypassCard" />
+                <ScalarProperty Name="startdate" ColumnName="startdate" />
+                <ScalarProperty Name="enddate" ColumnName="enddate" />
+                <ScalarProperty Name="CardID26" ColumnName="CardID26" />
+                <ScalarProperty Name="IsTimezone" ColumnName="IsTimezone" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_Birimler">
+            <EntityTypeMapping TypeName="TSEModel.Tbl_Birimler">
+              <MappingFragment StoreEntitySet="Tbl_Birimler">
+                <ScalarProperty Name="CihazUstBirimId" ColumnName="CihazUstBirimId" />
+                <ScalarProperty Name="CihazID" ColumnName="CihazID" />
+                <ScalarProperty Name="EkstraId" ColumnName="EkstraId" />
+                <ScalarProperty Name="KasiyerId" ColumnName="KasiyerId" />
+                <ScalarProperty Name="MutfakId" ColumnName="MutfakId" />
+                <ScalarProperty Name="SalonId" ColumnName="SalonId" />
+                <ScalarProperty Name="Ekstra" ColumnName="Ekstra" />
+                <ScalarProperty Name="Kasiyer" ColumnName="Kasiyer" />
+                <ScalarProperty Name="Mutfak" ColumnName="Mutfak" />
+                <ScalarProperty Name="Salon" ColumnName="Salon" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="BirimAdi" ColumnName="BirimAdi" />
+                <ScalarProperty Name="BirimKodu" ColumnName="BirimKodu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Izinler">
+            <EntityTypeMapping TypeName="TSEModel.Izinler">
+              <MappingFragment StoreEntitySet="Izinler">
+                <ScalarProperty Name="IseBaslamaTarih" ColumnName="IseBaslamaTarih" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="KarsiAktarimIdTcSicil" ColumnName="KarsiAktarimIdTcSicil" />
+                <ScalarProperty Name="BitTarih" ColumnName="BitTarih" />
+                <ScalarProperty Name="BasTarih" ColumnName="BasTarih" />
+                <ScalarProperty Name="MailSended" ColumnName="MailSended" />
+                <ScalarProperty Name="SaatlikUcret" ColumnName="SaatlikUcret" />
+                <ScalarProperty Name="Ucretli" ColumnName="Ucretli" />
+                <ScalarProperty Name="Bitis" ColumnName="Bitis" />
+                <ScalarProperty Name="Baslangic" ColumnName="Baslangic" />
+                <ScalarProperty Name="Sure" ColumnName="Sure" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Saatlikizin" ColumnName="Saatlikizin" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="TipID" ColumnName="TipID" />
+                <ScalarProperty Name="SicilID" ColumnName="SicilID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

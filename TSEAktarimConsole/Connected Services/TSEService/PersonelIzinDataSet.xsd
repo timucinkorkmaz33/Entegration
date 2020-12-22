@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/PersonelIzinDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/PersonelIzinDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/PersonelIzinDataSet.xsd" id="PersonelIzinDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PersonelIzinDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PersonelIzin">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="PersonelIzinUN" type="xs:string" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="PersonelUN" type="xs:string" />
+              <xs:element minOccurs="0" name="IzinBasTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="IzinBitTar" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="IzinBasSaat" type="xs:duration" />
+              <xs:element minOccurs="0" name="IzinBitSaat" type="xs:duration" />
+              <xs:element minOccurs="0" name="IzinTurId" type="xs:int" />
+              <xs:element minOccurs="0" name="MesaiTurId">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Aciklama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="KullanilanSureDk" type="xs:int" />
+              <xs:element minOccurs="0" name="KalanGunlukIzin" type="xs:int" />
+              <xs:element minOccurs="0" name="KalanYillikIzin" type="xs:int" />
+              <xs:element minOccurs="0" name="OnayNo" type="xs:int" />
+              <xs:element minOccurs="0" name="OnayTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="EvrakPath">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="TalepTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Silindi" type="xs:boolean" />
+              <xs:element minOccurs="0" name="GorulduPDKS" type="xs:boolean" />
+              <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" minOccurs="0" name="HastalikTurUN" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="PersonelIzin0">
+      <xs:selector xpath=".//mstns:PersonelIzin" />
+      <xs:field xpath="mstns:PersonelIzinUN" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
